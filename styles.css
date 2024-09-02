@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll due to large images */
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure navbar is above other content */
+    position: relative;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.navbar .search-bar button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar .search-bar button:hover {
+    background: #0056b3;
+}
+
+/* Home Page */
+.homepage {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+.homepage .background-image {
+    background: url('background.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure content appears above */
+}
+
+.homepage .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1; /* Ensure text is above background */
+}
+
+.homepage .text-overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.homepage .text-overlay p {
+    font-size: 24px;
+    margin: 0;
+}
+.homepage .social-media-icons {
+    margin-top: 20px;
+}
+
+.homepage .social-media-icons a {
+    margin: 0 10px;
+}
+
+.homepage .social-media-icons img {
+    width: 50px;
+    height: 40px;
+}
+
+/* Recommendation Results */
+#results {
+    padding: 20px;
+}
+
+#results div {
+    margin-bottom: 20px;
+}
+
+#results img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Us Page */
+.about-us {
+    padding: 20px;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-us .team {
+    list-style: none;
+}
+
+.about-us .team li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Page */
+.contact-us {
+    padding: 20px;
+}
+
+.contact-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us label {
+    margin-top: 10px;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-us button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background: #218838;
+}
+
+
+
+

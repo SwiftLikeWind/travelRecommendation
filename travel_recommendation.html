@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">TravelBloom</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for recommendations...">
+            <button onclick="searchRecommendations()">Search</button>
+            <button onclick="clearResults()">Reset</button>
+        </div>
+    </nav>
+
+    <div class="homepage">
+        <div class="background-image">
+            <div class="text-overlay">
+                <h1>EXPLORE DREAM DESTINATIONS</h1>
+                <p>Your one-stop destination for travel recommendations around the world!</p>
+            </div>
+        </div>
+    </div>
+        <div class="social-media-icons">
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.jpeg" alt="Instagram"></a>
+        </div>
+    </div>
+    
+    <div id="results"></div>
+
+    <div class="about-us">
+        <h2>About TravelBloom</h2>
+        <p>TravelBloom is dedicated to providing personalized travel recommendations to enhance your adventures.</p>
+        <h3>Our Team</h3>
+        <ul class="team">
+            <li><strong>Jane Doe</strong> - Founder & CEO</li>
+            <li><strong>John Smith</strong> - Lead Developer</li>
+            <li><strong>Mary Johnson</strong> - Content Strategist</li>
+        </ul>
+    </div>
+
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    
+    
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
